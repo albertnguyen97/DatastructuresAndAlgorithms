@@ -7,7 +7,7 @@ np_array1 = np.array([1, 2, 5, 4])
 print(np_array1)
 
 # 2
-arr = [1, '1', 3, 4, 6]
+arr = [1, 1, 3, 4, 6]
 print(arr)
 
 # insert
