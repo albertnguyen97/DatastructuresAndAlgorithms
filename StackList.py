@@ -8,7 +8,7 @@ class Stack:
         return "\n".join(values)
 
     def isEmpty(self):
-        if self.list == []:
+        if not self.list:
             return True
         else:
             return False

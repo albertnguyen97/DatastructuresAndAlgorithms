@@ -38,6 +38,7 @@ class Stack:
         else:
             nodeValue = self.LinkedList.head.value.next
             return nodeValue
+
 # LIFO functionality
 # the change of data corruption is minimum
 # avoid random access is not possible
