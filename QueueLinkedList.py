@@ -32,7 +32,7 @@ class Queue:
         return ' '.join(values)
 
     def enqueue(self, value):
-        newNode = Node()
+        newNode = Node(value)
         if self.linkedList.head is None:
             self.linkedList.head = newNode
             self.linkedList.tail = newNode

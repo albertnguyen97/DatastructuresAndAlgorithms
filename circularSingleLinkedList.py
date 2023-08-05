@@ -3,6 +3,7 @@ class Node:
         self.value = value
         self.next = None
 
+
 class CircularSinglyLinkedList:
     def __int__(self):
         self.head = None
