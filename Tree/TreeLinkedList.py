@@ -1,4 +1,4 @@
-from datastructuresandalgorithms import QueueLinkedList as queue
+import QueueLinkedList as queue
 
 
 class TreeNode:

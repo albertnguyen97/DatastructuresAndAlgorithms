@@ -68,3 +68,18 @@ def levelOrderTraversal(rootNode):
                 customQueue.enqueue(root.value.leftChild)
             if root.value.rightChild is not None:
                 customQueue.enqueue(root.value.leftChild)
+
+
+def searchNode(rootNode, nodeValue):
+    if rootNode.data == nodeValue:
+        print("the value is found")
+    elif nodeValue < rootNode.data:
+        if rootNode.leftChild.data == nodeValue:
+            print("the value is found")
+        else:
+            searchNode(rootNode.leftChild, nodeValue)
+    else:
+        if rootNode.rightChild.data == nodeValue:
+            print("the value is found")
+        else:
+            searchNode(rootNode.rightChild, nodeValue)
