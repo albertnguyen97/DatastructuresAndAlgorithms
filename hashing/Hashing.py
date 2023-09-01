@@ -12,4 +12,5 @@ def modASCII(string, cellNumber):
         total += ord(i)
     return total % cellNumber
 
+
 print(modASCII("ABC", 24))
