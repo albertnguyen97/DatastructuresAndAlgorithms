@@ -1,14 +1,16 @@
 class Heap:
     def __init__(self, size):
-        self.customList = (size+1) * [None]
+        self.customList = (size + 1) * [None]
         self.heapSize = 0
         self.maxSize = size + 1
 
-def peekofHeap(rootNode):
+
+def peekOfHeap(rootNode):
     if not rootNode:
         return
     else:
         return rootNode.customList[1]
+
 
 def sizeofHeap(rootNode):
     if not rootNode:
@@ -16,15 +18,17 @@ def sizeofHeap(rootNode):
     else:
         return rootNode.heapSize
 
+
 def levelOrderTraversal(rootNode):
     if not rootNode:
         return
     else:
-        for i in range(1, rootNode.heapSize+1):
+        for i in range(1, rootNode.heapSize + 1):
             print(rootNode.customList[i])
 
+
 def heapifyTreeInsert(rootNode, index, heapType):
-    parentIndex = int(index/2)
+    parentIndex = int(index / 2)
     if index <= 1:
         return
     if heapType == "Min":
@@ -40,13 +44,15 @@ def heapifyTreeInsert(rootNode, index, heapType):
             rootNode.customList[parentIndex] = temp
         heapifyTreeInsert(rootNode, parentIndex, heapType)
 
-def inserNode(rootNode, nodeValue, heapType):
+
+def insertNode(rootNode, nodeValue, heapType):
     if rootNode.heapSize + 1 == rootNode.maxSize:
         return "The Binary Heap is Full"
     rootNode.customList[rootNode.heapSize + 1] = nodeValue
     rootNode.heapSize += 1
     heapifyTreeInsert(rootNode, rootNode.heapSize, heapType)
     return "The value has been successfully inserted"
+
 
 def heapifyTreeExtract(rootNode, index, heapType):
     leftIndex = index * 2
@@ -90,6 +96,7 @@ def heapifyTreeExtract(rootNode, index, heapType):
                 rootNode.customList[swapChild] = temp
     heapifyTreeExtract(rootNode, swapChild, heapType)
 
+
 def extractNode(rootNode, heapType):
     if rootNode.heapSize == 0:
         return
@@ -100,6 +107,7 @@ def extractNode(rootNode, heapType):
         rootNode.heapSize -= 1
         heapifyTreeExtract(rootNode, 1, heapType)
         return extractedNode
+
 
 def deleteEntireBP(rootNode):
     rootNode.customList = None
