@@ -30,7 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/nevergiveup/PycharmProjects/pythonProject2023/datastructuresandalgorithms",
+    "last_opened_file_path": "/home/nevergiveup/PycharmProjects/pythonProject2023/datastructuresandalgorithms/bellmanford",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693499524351</updated>
       <workItem from="1693499525798" duration="1000" />
-      <workItem from="1695314346064" duration="607000" />
+      <workItem from="1695314346064" duration="912000" />
     </task>
     <servers />
   </component>
