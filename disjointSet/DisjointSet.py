@@ -28,9 +28,9 @@ class DisjointSet:
             self.parent[yroot] = xroot
             self.rank[xroot] += 1
 
-# vertices = ["A", "B", "C", "D", "E"]
+vertices = ["A", "B", "C", "D", "E"]
 
-# ds = DisjointSet(vertices)
-# ds.union("A", "B")
-# ds.union("A", "C")
-# print(ds.find("A"))
+ds = DisjointSet(vertices)
+ds.union("A", "B")
+ds.union("A", "C")
+print(ds.find("A"))
